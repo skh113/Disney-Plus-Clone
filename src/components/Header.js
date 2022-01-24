@@ -4,7 +4,9 @@ import styled from "styled-components";
 function Header() {
   return (
     <Nav>
-      <Logo src="/images/logo.svg" />
+      <a href="#">
+        <Logo src="/images/logo.svg" />
+      </a>
       <NavMenu>
         <a>
           <img src="/images/home-icon.svg" />
@@ -57,13 +59,17 @@ const NavMenu = styled.div`
   cursor: pointer;
   align-items: center;
 
+  @media (max-width: 935px) {
+    display: none;
+  }
+
   a {
     display: flex;
     align-items: center;
     padding: 0 20px;
     img {
       height: 20px;
-      padding: 5px;
+      margin: 5px;
     }
     span {
       font-size: 13px;
