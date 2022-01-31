@@ -59,10 +59,11 @@ const Background = styled.div`
 `;
 
 const ImgTitle = styled.div`
-  height: 30vh;
+  height: auto;
   min-height: 170px;
-  width: 35vw;
+  width: 20%;
   min-width: 200px;
+  margin-top: 40px;
   left: 0;
 
   img {
@@ -101,7 +102,7 @@ const TrailerButton = styled(PlayButton)`
   border: 1px solid rgb(249, 249, 249);
   color: rgb(249, 249, 249);
   &:hover {
-    background: rgb (100, 100, 100);
+    background: rgba(0, 0, 0, 0.7);
   }
 `;
 
@@ -110,7 +111,7 @@ const AddButton = styled.button`
   height: 44px;
   margin: 0 10px;
   border-radius: 50%;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.7);
   border: 2px solid white;
   display: flex;
   align-items: center;
@@ -139,4 +140,5 @@ const Description = styled.div`
   line-height: 1.4;
   font-size: 20px;
   color: rgb(249, 249, 249);
+  max-width: 760px;
 `;

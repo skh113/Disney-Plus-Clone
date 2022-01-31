@@ -56,7 +56,6 @@ const Logo = styled.img`
 
 const NavMenu = styled.div`
   display: flex;
-  cursor: pointer;
   align-items: center;
 
   @media (max-width: 935px) {
@@ -66,15 +65,18 @@ const NavMenu = styled.div`
   a {
     display: flex;
     align-items: center;
-    padding: 0 20px;
+    margin: 0 20px;
     img {
       height: 20px;
       margin: 5px;
+      cursor: pointer;
     }
     span {
       font-size: 13px;
       letter-spacing: 1.42px;
       position: relative;
+      cursor: pointer;
+
       &:after {
         content: "";
         height: 2px;
