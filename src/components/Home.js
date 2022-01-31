@@ -2,17 +2,21 @@ import React from "react";
 import styled from "styled-components";
 import ImgSlider from "./ImgSlider";
 import Viewers from "./Viewers";
+import Movies from "./Movies";
 
 function Home() {
   return (
     <Container>
       <ImgSlider />
+      <Viewers />
+      <Movies />
     </Container>
   );
 }
 
 export default Home;
 
+// main is like div but search engines see it as the main content
 const Container = styled.main`
   min-height: calc(100vh - 70px);
   ${"" /* 70px is header height */}
